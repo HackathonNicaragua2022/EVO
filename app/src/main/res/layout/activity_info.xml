@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info"
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="167dp"
+        android:layout_height="26dp"
+        android:text="informacion de las rutas"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="646dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:background="@drawable/redondo_fondo_ina"
+
+                >
+
+                <ImageView
+                    android:id="@+id/iconImagenView4"
+                    android:layout_width="80dp"
+                    android:layout_height="94dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="28dp"
+                    android:foregroundGravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/bus_img"></ImageView>
+
+                <LinearLayout
+                    android:id="@+id/linerLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/iconImagenView4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameTextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="RUTA 13"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/cityTextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="campus a policia , recolecion"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="69dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="302dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="100dp"
+                    android:gravity="center"
+                    android:text="Inactiva" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:background="@drawable/redondo_fondo"
+                >
+
+                <ImageView
+                    android:id="@+id/iconImagenView2"
+                    android:layout_width="80dp"
+                    android:layout_height="94dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="28dp"
+                    android:foregroundGravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/bus_img"></ImageView>
+
+                <LinearLayout
+                    android:id="@+id/linerLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/iconImagenView2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameTextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="RUTA 12"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/cityTextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="centro a la terminal"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="69dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="302dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="100dp"
+                    android:gravity="center"
+                    android:text="Activa" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:background="@drawable/redondo_fondo"
+                >
+
+                <ImageView
+                    android:id="@+id/iconImagenView"
+                    android:layout_width="80dp"
+                    android:layout_height="94dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="28dp"
+                    android:foregroundGravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/bus_img"></ImageView>
+
+                <LinearLayout
+                    android:id="@+id/linerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/iconImagenView"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="RUTA 14"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/cityTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="centro a la primero de mayo"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="69dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="302dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="100dp"
+                    android:gravity="center"
+                    android:text="Activa" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:background="@drawable/redondo_fondo"
+                >
+
+                <ImageView
+                    android:id="@+id/iconImagenView5"
+                    android:layout_width="80dp"
+                    android:layout_height="94dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="28dp"
+                    android:foregroundGravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/bus_img"></ImageView>
+
+                <LinearLayout
+                    android:id="@+id/linerLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/iconImagenView5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameTextView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="RUTA 11"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/cityTextView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="centro a la primero de mayo"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="69dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="302dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="100dp"
+                    android:gravity="center"
+                    android:text="Activa" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:background="@drawable/redondo_fondo_ina"
+                >
+
+                <ImageView
+                    android:id="@+id/iconImagenView6"
+                    android:layout_width="80dp"
+                    android:layout_height="94dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="28dp"
+                    android:foregroundGravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/bus_img"></ImageView>
+
+                <LinearLayout
+                    android:id="@+id/linerLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/iconImagenView6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameTextView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="RUTA 10"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/cityTextView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="centro a sutiaba"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="69dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="302dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="100dp"
+                    android:gravity="center"
+                    android:text="Inactiva" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

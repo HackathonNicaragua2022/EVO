@@ -10,6 +10,54 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRuta">
         <activity
+            android:name=".comentarios"
+            android:exported="false" />
+        <activity
+            android:name=".info"
+            android:exported="false" />
+        <activity
+            android:name=".mapa_3"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAikAm5Llb-hdGY5md2XCH_XR2nwEtNmEY" />
+
+        <activity
+            android:name=".mapa_2"
+            android:exported="true"
+            android:label="@string/title_activity_mapa2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mapa"
+            android:exported="false"
+            android:label="@string/title_activity_mapa" />
+        <activity
+            android:name=".trayec"
+            android:exported="false"
+            android:label="@string/title_activity_trayec" />
+        <activity
+            android:name=".Rutas"
+            android:exported="false" />
+        <activity
+            android:name=".acerca_de"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
