@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comentarios"
+    android:background="@drawable/rectangle_1"
+    android:alpha="0.6">
+
+    <RelativeLayout
+        android:layout_width="407dp"
+        android:layout_height="170dp"
+        android:background="@drawable/caja_comen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="269dp"
+            android:layout_height="134dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="112dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/come">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="101dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="294dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="43dp"
+            android:background="@drawable/enviar"
+            android:text="Enviar" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="407dp"
+        android:layout_height="170dp"
+        android:background="@drawable/caja_comen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" >
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="342dp"
+            android:layout_marginBottom="94dp"
+            android:background="@drawable/usuario"
+            app:srcCompat="@drawable/user_80_icon_icons_com_57249" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="276dp"
+            android:layout_marginBottom="123dp"
+            android:fontFamily="@string/app_name"
+            android:text="el_momo"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="264dp"
+            android:layout_height="57dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="31dp"
+            android:text="Esta app asido de ayuda"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
